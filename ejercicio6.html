@@ -21,30 +21,35 @@
 
         <article style="display:flex;justify-content: center;"> <!--Este style me lo ha enseñado mi compañero de piso Miha-->
             
-            <form>
+            <form action="https://formsubmit.co/fermailforwork@gmail.com" method="POST"> 
+                <!-- Vinculamos el formulario con el mail y el https se comunica con 
+                con el protocolo post (enviar información) y no el get (recivirla)
+                es decir, hacemos la acción de enviar y el metodo que utilizamos para realizarla
+                -->
+                <!-- Añadimos el atributo nombre a todos los campos imput para que nos lo envie como <nombre>: <lo puesto en el campo>-->
                 <h3 style="display:flex;justify-content: center;">😊 Nombre y apellidos</h3>
                     <p style="display:flex;justify-content: center;">
-                        <input type="text" placeholder="Nombre y apellidos" class="form-control" pattern="[^ ]+">
+                        <input type="text" name= "Nombre" placeholder="Nombre y apellidos" class="form-control" pattern="[^ ]+">
                     </p>
 
                 <h3 style="display:flex;justify-content: center;">🎂 Fecha de nacimiento</h3>
-                    <p style="display:flex;justify-content: center;"><input type="date" class="form-control">
+                    <p style="display:flex;justify-content: center;"><input name="Fecha de Nacimiento" type="date" class="form-control">
                     </p>
 
                 <h3 style="display:flex;justify-content: center;">💳 DNI</h3>
                     <p style="display:flex;justify-content: center;">
-                        <input type="text" placeholder="Introduce el DNI" class="form-control" pattern="(\d{8}([\- ]+)?[a-zA-Z])">
+                        <input type="text" name = "DNI" placeholder="Introduce el DNI" class="form-control" pattern="(\d{8}([\- ]+)?[a-zA-Z])">
                     </p>
                 
                 
                 <h3 style="display:flex;justify-content: center;">📨 Mail</h3>
                     <p style="display:flex;justify-content: center;">
-                        <input type="mail" placeholder="Introduce el mail" class="form-control" pattern="([\w\d\-\.ñÑ]+@\w+\.\w+)">
+                        <input type="mail" name="Mail" placeholder="Introduce el mail" class="form-control" pattern="([\w\d\-\.ñÑ]+@\w+\.\w+)">
                     </p>
                 
                 <h3 style="display:flex;justify-content: center;">📞 Número de telefono</h3>
                     <p style="display:flex;justify-content: center;">
-                        <input type="text" placeholder="Entra un núm. de 9 digitos" class="form-control" pattern="(([+ ]\d{2}[ \-]?)?\d{9})">
+                        <input type="text" name="telefono" placeholder="Entra un núm. de 9 digitos" class="form-control" pattern="(([+ ]\d{2}[ \-]?)?\d{9})">
                     </p>
                 
                 <p style="display:flex;justify-content: center;"><button>Submit</button></p>
