@@ -1,4 +1,14 @@
 
-article, p, header, h3{
+*{
+    background-color: bisque;
+    font-variant-numeric: oldstyle-nums;
+}
+
+h2,h3,article, p{
     display: flex;justify-content: center;
+}
+
+h1{
+    display: flex;justify-content: center;
+    background-color: aqua;
 }
